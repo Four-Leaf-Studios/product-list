@@ -1,0 +1,39 @@
+{
+  "name": "product-list",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build -c vite.config.lib.ts",
+    "build:lib": "vite build -c vite.config.lib.ts",
+    "preview": "vite preview"
+  },
+  "exports": {
+    ".": {
+      "import": "./dist/index.es.js",
+      "require": "./dist/index.cjs.js"
+    },
+    "./standalone": {
+      "import": "./dist/standalone.es.js",
+      "require": "./dist/standalone.cjs.js"
+    }
+  },
+  "peerDependencies": {
+    "preact": "^10",
+    "react": "^18 || ^19",
+    "react-dom": "^18 || ^19"
+  },
+  "dependencies": {
+    "preact": "^10.27.2"
+  },
+  "devDependencies": {
+    "@preact/preset-vite": "^2.10.2",
+    "vite": "npm:rolldown-vite@7.1.12",
+    "typescript": "~5.8.3",
+    "@types/node": "^24.5.2"
+  },
+  "overrides": {
+    "vite": "npm:rolldown-vite@7.1.12"
+  }
+}
