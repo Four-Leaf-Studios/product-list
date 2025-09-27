@@ -9,7 +9,7 @@ import { SearchProvider } from "@/context/SearchContext";
 import ProductListContainer from "@/components/ProductListContainer/ProductListContainer";
 import type { Config } from "@/types";
 
-const ProductList = (config: Config) => {
+const ProductList = ({ config }: { config: Config }) => {
   return (
     <ConfigProvider config={config}>
       <RenderLogger name="ConfigProvider children" />

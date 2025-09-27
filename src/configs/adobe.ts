@@ -207,6 +207,7 @@ export function createAdobeCommerceConfig({
     callouts: { items: [] },
     search: { debounceMs: 300, placeholder: "Search products..." },
     slots: {},
+    icons: {},
   };
 
   return { ...defaultConfig, ...overrides };

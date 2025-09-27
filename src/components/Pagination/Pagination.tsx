@@ -1,6 +1,6 @@
 import { useProductsContext } from "@/context/ProductsContext";
 import RenderLogger from "@/components/RenderLogger";
-import { useConfigContext } from "@/standalone";
+import { useConfigContext } from "@/context/ConfigContext";
 
 function Pagination() {
   const { refetch, hasMore, loading, page, products } = useProductsContext();

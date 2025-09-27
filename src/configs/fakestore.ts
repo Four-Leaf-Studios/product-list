@@ -58,7 +58,13 @@ export function createFakeStoreConfig({
       loadFilters: async () => {
         const res = await fetch(`${baseUrl}/products/categories`);
         const categories: string[] = await res.json();
-        return [{ id: "category", label: "Category", values: categories }];
+        return [
+          {
+            id: "category",
+            label: "Category",
+            values: categories.map((c) => ({ label: c })), // ✅ match FilterOption type
+          },
+        ];
       },
 
       loadSortOptions: async () => [
@@ -150,5 +156,6 @@ export function createFakeStoreConfig({
     callouts: { items: [] },
     search: { debounceMs: 300, placeholder: "Search products..." },
     slots: {},
+    icons: {},
   };
 }

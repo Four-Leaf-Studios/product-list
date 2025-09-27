@@ -6,7 +6,7 @@ import ProductPrice from "@/components/ProductPrice/ProductPrice";
 import WishlistButton from "@/components/WishlistButton/WishlistButton";
 import AddToCartButton from "@/components/AddToCartButton/AddToCartButton";
 import { memo } from "preact/compat";
-import { useConfigContext } from "@/standalone";
+import { useConfigContext } from "@/context/ConfigContext";
 
 const Product = memo((product: ProductType) => {
   const { featureFlags } = useConfigContext();

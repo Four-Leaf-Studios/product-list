@@ -6,7 +6,7 @@ import RenderLogger from "@/components/RenderLogger";
 import Search from "@/components/Search/Search";
 import Sort from "@/components/Sort/Sort";
 import { useFiltersContext } from "@/context/FiltersContext";
-import { ProductList } from "@/standalone";
+import ProductList from "@/components/ProductList/ProductList";
 
 const ProductListContainer = () => {
   const { open } = useFiltersContext();

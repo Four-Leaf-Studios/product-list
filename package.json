@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build -c vite.config.lib.ts",
+    "build": "vite build -c vite.config.ts",
     "build:lib": "vite build -c vite.config.lib.ts",
     "preview": "vite preview"
   },

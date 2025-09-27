@@ -1,7 +1,7 @@
 import { useEffect, useState } from "preact/hooks";
 import { useConfigContext } from "@/context/ConfigContext";
 import { useFiltersContext } from "@/context/FiltersContext";
-import { useProductsContext } from "@/standalone";
+import { useProductsContext } from "@/context/ProductsContext";
 import RenderLogger from "@/components/RenderLogger";
 import type { FilterOption } from "@/types";
 
